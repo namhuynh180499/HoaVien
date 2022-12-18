@@ -19,7 +19,7 @@ export default function Top() {
             <a href='#booking'className='bookBtn'><div >BOOK NOW</div></a>
         </div>
         <div className='topLink'>
-            <div className='top-link'><a href="tel:0926200006">&#9742;</a></div>
+            <div className='top-link'><a href="tel:0983879798">&#9742;</a></div>
             <div className='top-link' onClick={() => {alert("Chưa hỗ trợ")}}>&#9993;</div>
             <div 
             className='top-link' 

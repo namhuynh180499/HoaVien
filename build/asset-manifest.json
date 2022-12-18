@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HoaVien/static/css/main.ecdff94e.css",
-    "main.js": "/HoaVien/static/js/main.6b0fd5bf.js",
+    "main.js": "/HoaVien/static/js/main.f6027528.js",
     "static/media/hoboi.jpg": "/HoaVien/static/media/hoboi.3f4c52b16d545a15a3ea.jpg",
     "static/media/trangtri5.jpg": "/HoaVien/static/media/trangtri5.3f4c52b16d545a15a3ea.jpg",
     "static/media/trangtri1.jpg": "/HoaVien/static/media/trangtri1.023f0aa8f3b0e9c7d84c.jpg",
@@ -35,10 +35,10 @@
     "static/media/lau.jpg": "/HoaVien/static/media/lau.39a86deab2c98f0a9c20.jpg",
     "index.html": "/HoaVien/index.html",
     "main.ecdff94e.css.map": "/HoaVien/static/css/main.ecdff94e.css.map",
-    "main.6b0fd5bf.js.map": "/HoaVien/static/js/main.6b0fd5bf.js.map"
+    "main.f6027528.js.map": "/HoaVien/static/js/main.f6027528.js.map"
   },
   "entrypoints": [
     "static/css/main.ecdff94e.css",
-    "static/js/main.6b0fd5bf.js"
+    "static/js/main.f6027528.js"
   ]
 }
