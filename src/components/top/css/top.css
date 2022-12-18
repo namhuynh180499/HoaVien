@@ -1,0 +1,78 @@
+.top {
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+.top .topBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75px;
+  width: 270px;
+  display: flex;
+  font-weight: bolder;
+}
+.top .topBtn .menuBtn, .top .topBtn .bookBtn {
+  width: 50%;
+  padding-top: 25px;
+  text-align: center;
+}
+.top .topBtn .menuBtn {
+  background-color: rgb(236, 234, 234);
+  color: #cda560;
+  border-bottom: solid 1px black;
+}
+.top .topBtn .bookBtn {
+  background-color: #DCB46E;
+}
+.top .topBtn .bookBtn.hiding {
+  display: none;
+}
+.top .topBtn a {
+  text-decoration: none;
+  color: black;
+}
+.top .topLink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 75px;
+  width: 270px;
+  display: flex;
+}
+.top .topLink .top-link {
+  height: 75px;
+  width: 90%;
+  border: solid 1px black;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .top .topBtn {
+    width: 135px;
+  }
+  .top .topBtn .menuBtn {
+    width: 100%;
+  }
+  .top .topBtn .bookBtn {
+    display: none;
+  }
+  .top .topLink {
+    width: calc(100% - 135px);
+  }
+  .top .topLink a {
+    text-decoration: none;
+    color: white;
+  }
+}/*# sourceMappingURL=top.css.map */

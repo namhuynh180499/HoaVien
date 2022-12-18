@@ -1,0 +1,102 @@
+.App {
+    width: 100%;
+    height: auto;
+    .appImg {
+        width: 100%;
+        height: 800px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .appGioiThieu {
+        width: 100%;
+        height: 600px;
+        position: relative;
+        justify-content: center;
+        .appGT {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 400px;
+            background-color: #EEEEEA;
+            padding-left: 20%;
+
+            h1 {
+                margin: 30px 20px;
+                font-size: 30px;
+                color: #DCB46E;
+            }
+            .appGTimg {
+              position: absolute;
+              width: 40%;
+              top: -30%;
+              right: 150px;
+    
+            }
+            p {width: 30%; font-size: 17px;}
+            .xemchitiet {
+                width: 120px;
+                height: 40px;
+                border: solid 3px #DCB46E;
+                font-weight: bolder;
+                text-align: center;
+                padding-top: 5px;
+                margin: 20px 20px;
+                &:hover {
+                    background-color: #DCB46E;
+                    color: white;
+                }
+            }
+        } 
+        
+    }
+    .dichvu{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        .dv {
+            width: 100%;
+            height: 100%;
+            border: solid 2px black;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .App {
+        .appImg {
+            height: 250px;
+        }
+        .appGioiThieu {
+            .appGT {
+                height: auto;
+                position: static;
+                padding: 20px 20px;
+                .appGTimg {
+                    position: static;
+                    width: 100%;
+                }
+                p { width: unset;text-align: center;}
+                .xemchitiet {
+                    margin: auto;
+                }
+            }
+        }
+        .dichvu {
+            height: auto;
+            display: unset;
+            .dv {
+                width: 95%;
+                height: 250px;
+                margin: 5px auto;
+                img {width: 100%;}
+            }
+        }
+    }
+}

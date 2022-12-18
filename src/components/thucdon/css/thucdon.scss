@@ -1,0 +1,161 @@
+
+* {box-sizing: border-box;}
+.thucdonImg{
+    width: 100%;
+    height: 450px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.thucdonSet {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 80px 20%;
+    background-color: #F0F0F0;
+    h1, h3 {
+        color: #DCB46E;
+    }
+    p {
+        width: 35%;
+    }
+    .oks {
+        position: absolute;
+        top: 100px;
+        width: 150px;
+        height: 200px;
+        overflow: hidden;
+        display: flex;
+        background-color: #DCB46E;
+        img{height: 200px;width: 150px;}
+    }
+    .xemthucdon {
+        width: 100%;
+        height: 400px;
+        right: 20%;
+        top: 80px;
+        display: flex;
+        .combo {
+            width: 50%;
+            height: 100%;
+            background-color: #ebe5e5;
+            .combopage {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                .btnPage {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 30px;
+                    text-align: center;
+                    color: #a38147;
+                    border: solid 2px #c3a063;
+                }
+                .paging {
+                    width: calc(100% - 100px);
+                    text-align: center;
+                    font-size: 24px;
+                    padding-top: 10px;
+                }   
+            }
+            .comboset {
+                width: 100%;
+                height: 70%;
+                padding: 20px 20px;
+                .set{   
+                    color: #DCB46E;
+                    font-size: 30px;
+                    font-weight: bolder;
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+                .food{
+                    margin: 5px 0;
+                    font-size: 18px;
+                    font-family:cursive;
+                    &:before, &::after {content: " - ";}
+                }
+           }
+        }
+        .comboimg {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+            img {width: 100%;
+                height: 100%;
+                object-fit: cover ;}
+        }
+    }
+   
+} 
+.dsamthuc {    
+    margin: 200px 20%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    position: relative;
+    h1 {
+        width: 50%;
+        margin: unset;
+        margin-left: 25%;
+        position: absolute;
+        top: -100px;
+        text-align: center;
+        color: #d4a758;
+    }
+    .monan {
+        height: 240px;
+        border: solid 1px black;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+@media only screen and (max-width:1000px) {
+    .thucdonImg {
+        height: 250px;
+    }
+    .thucdonSet {
+        position: static;
+        width: 100%;
+        padding: 10px 5%;
+        text-align: center;
+        h1 {margin-top: 20px;}
+        p { width: 90%; margin: 0 auto 40px auto;}
+        .xemthucdon {
+            position: static;
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            display: unset;
+            .combo {
+                width: 100%;
+            }
+            .comboimg {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+    .dsamthuc {
+        display: unset;
+        h1 {
+            position: static;
+            width: 100%;
+            margin: unset;
+            font-size: 25px;
+        }
+        .monan {
+            width: 80%;
+            height: 180px;
+            margin: 25px auto;
+            border: solid 1px rgb(198, 189, 189);
+        }
+    }
+   
+}

@@ -1,0 +1,106 @@
+.App {
+  width: 100%;
+  height: auto;
+}
+.App .appImg {
+  width: 100%;
+  height: 800px;
+}
+.App .appImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.App .appGioiThieu {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  justify-content: center;
+}
+.App .appGioiThieu .appGT {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #EEEEEA;
+  padding-left: 20%;
+}
+.App .appGioiThieu .appGT h1 {
+  margin: 30px 20px;
+  font-size: 30px;
+  color: #DCB46E;
+}
+.App .appGioiThieu .appGT .appGTimg {
+  position: absolute;
+  width: 40%;
+  top: -30%;
+  right: 150px;
+}
+.App .appGioiThieu .appGT p {
+  width: 30%;
+  font-size: 17px;
+}
+.App .appGioiThieu .appGT .xemchitiet {
+  width: 120px;
+  height: 40px;
+  border: solid 3px #DCB46E;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 5px;
+  margin: 20px 20px;
+}
+.App .appGioiThieu .appGT .xemchitiet:hover {
+  background-color: #DCB46E;
+  color: white;
+}
+.App .dichvu {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.App .dichvu .dv {
+  width: 100%;
+  height: 100%;
+  border: solid 2px black;
+}
+.App .dichvu .dv img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+  .App .appImg {
+    height: 250px;
+  }
+  .App .appGioiThieu .appGT {
+    height: auto;
+    position: static;
+    padding: 20px 20px;
+  }
+  .App .appGioiThieu .appGT .appGTimg {
+    position: static;
+    width: 100%;
+  }
+  .App .appGioiThieu .appGT p {
+    width: unset;
+    text-align: center;
+  }
+  .App .appGioiThieu .appGT .xemchitiet {
+    margin: auto;
+  }
+  .App .dichvu {
+    height: auto;
+    display: unset;
+  }
+  .App .dichvu .dv {
+    width: 95%;
+    height: 250px;
+    margin: 5px auto;
+  }
+  .App .dichvu .dv img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=gioithieu.css.map */

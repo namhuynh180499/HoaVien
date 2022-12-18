@@ -1,0 +1,39 @@
+.Datlich {
+  width: 60%;
+  height: auto;
+  margin: 120px auto 80px auto;
+  position: relative;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto;
+}
+.Datlich .inputInfo .title {
+  color: gray;
+  margin: 10px 0;
+}
+.Datlich .inputInfo input {
+  width: 100%;
+  height: 40px;
+  border-color: #DCB46E;
+}
+
+h4 {
+  position: absolute;
+  top: -70px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Datlich {
+    display: unset;
+    margin-bottom: 850px;
+  }
+  .Datlich h4 {
+    position: unset;
+    margin: 10px 10%;
+    text-align: center;
+  }
+  .Datlich .inputInfo {
+    width: 80%;
+    margin: auto;
+  }
+}/*# sourceMappingURL=datlich.css.map */

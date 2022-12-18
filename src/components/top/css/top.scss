@@ -1,0 +1,71 @@
+.top {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.486);
+    .topBtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 75px;
+        width: 270px;
+        display: flex;
+        font-weight: bolder;
+        .menuBtn, .bookBtn {
+            width: 50%;
+            padding-top: 25px;
+            text-align: center;
+        }
+        .menuBtn {
+            background-color: rgb(236, 234, 234);
+            color: #cda560;
+            border-bottom: solid 1px black;
+        }
+        .bookBtn {
+            background-color: #DCB46E;
+            &.hiding {display: none;}
+        }
+        a {text-decoration: none;color: black;}
+    }
+    .topLink {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 75px;
+        width: 270px;
+        display: flex;
+
+        .top-link {
+            height: 75px;
+            width: 90%;
+            border: solid 1px black;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .top {
+        .topBtn {
+            width: 135px;
+            .menuBtn {width: 100%; }
+            .bookBtn {display: none;}
+        }
+        .topLink {
+            width: calc(100% - 135px);
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
